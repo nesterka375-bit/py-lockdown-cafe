@@ -1,6 +1,3 @@
-from itertools import count
-
-
 class VaccineError(Exception):
     pass
 
@@ -23,4 +20,3 @@ class NotWearingMaskError(Exception):
             message: str = "Friends should buy masks"
     ) -> None:
         super().__init__(message)
-        self.count = count
